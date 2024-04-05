@@ -12,9 +12,9 @@ void setup(void) {
 	cfg.unit_glass2.pin_scl=2;
     cfg.unit_glass2.i2c_freq = 400000;
     M5.begin(cfg);
-	M5.setPrimaryDisplayType({m5::board_t::board_M5UnitGLASS2});
+//	M5.setPrimaryDisplayType({m5::board_t::board_M5UnitGLASS2});
     M5.Display.setBrightness(255);
-    avatar.setScale(0.3);
+    avatar.setScale(0.35);
     avatar.setPosition(-76, -96);
     avatar.init();
 }
